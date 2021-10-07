@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray"
+    tools:context=".HomeActivity">
+
+    <carbon.widget.Button
+        android:id="@+id/buMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/whitebackground"
+        android:background="@color/darkRed"
+        android:textStyle="bold"
+        android:padding="30dp"
+        android:layout_marginTop="45dp"
+        app:carbon_cornerRadius="20dp"/>
+
+    <carbon.widget.Button
+        android:id="@+id/buArtists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artists"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/whitebackground"
+        android:background="@color/darkRed"
+        android:textStyle="bold"
+        android:padding="30dp"
+        android:layout_marginBottom="45dp"
+        app:carbon_cornerRadius="20dp"/>
+
+    <carbon.widget.Button
+        android:id="@+id/buTvShows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tv Shows"
+        android:textColor="@color/whitebackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buArtists"
+        app:layout_constraintTop_toBottomOf="@id/buMovies"
+        android:background="@color/darkRed"
+        android:textStyle="bold"
+        android:padding="30dp"
+        app:carbon_cornerRadius="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

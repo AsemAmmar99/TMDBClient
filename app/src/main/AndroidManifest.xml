@@ -13,15 +13,19 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".presentation.artist.ArtistActivity"
+            android:label="Artists"
             android:exported="true" />
         <activity
             android:name=".presentation.tv.TvShowActivity"
+            android:label="Tv Shows"
             android:exported="true" />
         <activity
             android:name=".presentation.movie.MovieActivity"
+            android:label="Movies"
             android:exported="true" />
         <activity android:name=".HomeActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
